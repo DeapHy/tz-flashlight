@@ -1,10 +1,8 @@
 import asyncio
 import click
-import unittest
 import uvicorn
 
 from tz_flashlight.client import main
-from tests.testclient import TestClient
 
 @click.group()
 @click.help_option(
@@ -26,10 +24,6 @@ def runserver(**kwargs):
 @click.option("-p", "--port", default="9999", help="Порт сервера")
 def runclient(**kwargs):
     asyncio.run(main(host=kwargs["host"], port=kwargs["port"]))
-
-# @cli.command()
-# def runtests(**kwargs):
-#     unittest.main(TestClient())
 
 if __name__ == "__main__":
     cli()

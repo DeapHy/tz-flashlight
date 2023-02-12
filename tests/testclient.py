@@ -38,3 +38,6 @@ class TestClient(unittest.TestCase):
         }
         self.exactFlashlight.execute(payload)
         self.assertEqual(str(self.exactFlashlight), "Состояние фонаря: включен\nЦвет: 0x189585")
+
+if __name__ == "__main__":
+    unittest.main()
