@@ -48,8 +48,9 @@ class Flashlight:
         if color > 16777215 or color < 0:
             print("Ошибка смены цвета фонаря: значение нового цвета не лежит в диапазоне [0; 16777215]")
             return
-        self.__color = hex(color)
-        print(f"Цвет фонаря изменен на {hex(color)}")
+        self.__color = color
+        print(self.__color)
+        print(f"Цвет фонаря изменен на {hex(self.__color)}")
 
 
     def execute(self, payload: dict) -> None:
