@@ -4,7 +4,8 @@ install_requires = [
     'click==8.1.3',
     'uvicorn==0.20.0',
     'websockets==10.4',
-    'fastapi==0.91.0'
+    'fastapi==0.91.0',
+    "typing_extensions=4.4.0"
 ]
 
 setup(
