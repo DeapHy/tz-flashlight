@@ -1,8 +1,8 @@
 from fastapi import FastAPI, WebSocket
+from json import dumps
 from pydantic import BaseModel
 from typing import Union
 from starlette.websockets import WebSocketDisconnect
-from json import dumps
 
 # Создание экземпляра сервера
 app = FastAPI()

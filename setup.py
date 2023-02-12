@@ -9,7 +9,7 @@ install_requires = [
 
 setup(
     name='tz-flashlight',
-    version='0.1.1',
+    version='0.1.3',
 
     description='Реализация фонаря, управляемого по сети',
 

@@ -1,10 +1,11 @@
 import asyncio
-from asyncio.exceptions import TimeoutError
 import websockets
-from flashlight import Flashlight
+
+from asyncio.exceptions import TimeoutError
 from json import loads
-from websockets.exceptions import ConnectionClosedError
 from socket import gaierror
+from tz_flashlight.flashlight import Flashlight
+from websockets.exceptions import ConnectionClosedError
 
 async def main(host="localhost", port=9999):
     try:
