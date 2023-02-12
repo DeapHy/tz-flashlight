@@ -1,7 +1,7 @@
 import asyncio
 from asyncio.exceptions import TimeoutError
 import websockets
-from flashlight import Flashlight
+from tz_flashlight.flashlight import Flashlight
 from json import loads
 from websockets.exceptions import ConnectionClosedError
 from socket import gaierror

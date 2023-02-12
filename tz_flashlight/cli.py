@@ -1,6 +1,6 @@
 import click
 import asyncio
-from client import main
+from tz_flashlight.client import main
 import uvicorn
 
 @click.group()
@@ -19,7 +19,7 @@ def runserver(**kwargs):
     # ...
     # ...
 
-    uvicorn.run(f'server:app', host=kwargs["host"], port=int(kwargs["port"]))
+    uvicorn.run(f'tz_flashlight.server:app', host=kwargs["host"], port=int(kwargs["port"]))
 
 @cli.command()
 @click.option("-h", "--host", default="localhost", help="Адрес сервера")
